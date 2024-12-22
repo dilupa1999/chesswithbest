@@ -2,12 +2,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import { Pagination, Autoplay } from "swiper/modules";
+import {  Autoplay } from "swiper/modules";
 
 import logo1 from "../../assets/png-transparent-atm-bank-of-ceylon-money-dfcc-bank-bank-text-logo-sign-thumbnail-removebg-preview 1.png";
 import logo2 from "../../assets/images-removebg-preview 1.png";
 import logo3 from "../../assets/1592809842-removebg-preview 1.png";
 import logo4 from "../../assets/channels4_profile-removebg-preview 1.png";
+import logo5 from "../../assets/ourcompanyLogo.png";
 
 import advertisment1 from "../../assets/Rectangle 26.png";
 import advertisment2 from "../../assets/Rectangle 27.png";
@@ -16,14 +17,15 @@ import advertisment4 from "../../assets/Rectangle 31.png";
 import advertisment5 from "../../assets/Rectangle 30.png";
 
 export default function OurPartners() {
-  const logos = [logo1, logo2, logo3, logo4];
+  const logos = [logo1, logo2, logo3, logo4,logo5];
   const banners = [advertisment1, advertisment2, advertisment3, advertisment4,advertisment5];
 
   return (
     <div className="py-8 bg-gray-50">
       {/* Title Section */}
       <div className="mb-12 text-center">
-        <h2 className="text-3xl font-bold text-orange-600">Our Partners</h2>
+        
+        <h1 className="text-5xl font-bold text-orange-600">Our Partners</h1>
         <p className="justify-center max-w-4xl mx-auto mt-4 text-gray-700">
           At Chess With The Best, our partners play a crucial role in
           advancing our mission to nurture chess talent. This section highlights
@@ -55,11 +57,11 @@ export default function OurPartners() {
               spaceBetween: 15,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 20,
             },
           }}
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           {logos.map((logo, index) => (
@@ -78,7 +80,7 @@ export default function OurPartners() {
 
       {/* Banners Section */}
       {/* Banners Section */}
-      <div className="p-5 mx-auto mt-0  lg:p-28">
+      <div className="p-5 mx-auto mt-0 lg:p-28">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -101,9 +103,9 @@ export default function OurPartners() {
             disableOnInteraction: false,
           }}
           pagination={{
-            clickable: true,
+            clickable: false,
           }}
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           {banners.map((banner, index) => (

@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Autoplay } from "swiper/modules"; // Import Autoplay module
+import {  Autoplay } from "swiper/modules"; // Import Autoplay module
 import advertisment1 from "../../assets/Rectangle 19.png";
 import advertisment2 from "../../assets/Rectangle 19.png";
 import advertisment3 from "../../assets/Rectangle 19.png";
@@ -45,7 +45,7 @@ export default function VipAdvertistment() {
             delay: 4000, // Slide changes every 3 seconds
             disableOnInteraction: false, // Keeps autoplay active even after user interaction
           }}
-          modules={[Pagination, Autoplay]} // Include Autoplay module
+          modules={[ Autoplay]} // Include Autoplay module
           className="mySwiper"
         >
           {slidesData.map((slide, index) => (

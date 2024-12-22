@@ -71,7 +71,7 @@ function Footer() {
           </li>
           <li className="flex items-center gap-6">
             <img src={location} alt="email" className="w-5 h-5" />
-            <p> , 21120</p>
+            <p> D S Senanayake Road , Kandy</p>
           </li>
           <li className="flex items-center gap-6">
             <img src={call} alt="email" className="w-5 h-5" />

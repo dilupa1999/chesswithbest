@@ -5,3 +5,11 @@
 .bg-primary {
   background-color: #F17922;
 }
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: wheat;
+  border-radius: 50%;
+
+
+}
